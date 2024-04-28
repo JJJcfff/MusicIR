@@ -5,6 +5,7 @@ import os
 import tqdm
 
 path_to_data = 'data/MP3-Example/'
+path_to_info = 'data/Music Info.csv'
 hop_length = 5000
 
 
@@ -47,10 +48,12 @@ def process_data():
     results = []
     for file in tqdm.tqdm(all_files, desc='Extracting features'):
         track_id = os.path.basename(file).split('-')[1].split('.')[0]
-        features = extract_feature(file)
-        results.append([track_id] + [features[col] for col in columns])
+        genre = os.path.basename(file).split('-')[0]
 
-    df = pd.DataFrame(results, columns=['track_id'] + columns)
+        features = extract_feature(file)
+        results.append([track_id, genre] + [features[col] for col in columns])
+
+    df = pd.DataFrame(results, columns=['track_id', 'genre'] + columns)
     df.set_index('track_id', inplace=True)
     df.to_csv('data/extracted_features.csv')
     print("Features extracted and saved to 'data/extracted_features.csv'")
