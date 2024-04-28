@@ -5,7 +5,7 @@ import os
 import tqdm
 
 path_to_data = 'data/MP3-Example/'
-hop_length = 512
+hop_length = 5000
 
 
 def extract_feature(file_name):
