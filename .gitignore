@@ -1,4 +1,5 @@
 /data/MP3-Example/*
+/data/spotify_previews/*
 /data/User Listening History.csv
 *.env
 *.txt
