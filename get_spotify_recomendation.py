@@ -51,5 +51,5 @@ def download_preview(track_id, output_dir='data/spotify_previews'):
     else:
         return False
 
-
-get_spotify_recommendations(['2dYV68n5uCXD5nM8BWQ7kp'])
+if __name__ == '__main__':
+    get_spotify_recommendations(['2dYV68n5uCXD5nM8BWQ7kp'])

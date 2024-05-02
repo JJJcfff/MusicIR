@@ -1,7 +1,7 @@
 from sklearn.neighbors import NearestNeighbors
 import pandas as pd
 from extract_feature import extract_feature
-import os
+from get_spotify_recomendation import get_spotify_recommendations
 def find_similar_songs(input_audio_path, features_csv_path, n_neighbors=5):
     features_df = pd.read_csv(features_csv_path, index_col='track_id')
     #exclude spotify_id and genre columns
