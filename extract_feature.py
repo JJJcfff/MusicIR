@@ -5,6 +5,7 @@ import os
 import tqdm
 
 path_to_data = 'data/MP3-Example/'
+path_to_info = 'data/Music Info.csv'
 hop_length = 5000
 
 
@@ -47,33 +48,44 @@ def extract_feature(file_name):
     return features
 
 
-def process_data():
-    columns = [
-        'chroma_stft_mean', 'chroma_stft_var', 'rms_mean', 'rms_var',
-        'spectral_centroid_mean', 'spectral_centroid_var', 'spectral_bandwidth_mean',
-        'spectral_bandwidth_var', 'spectral_rolloff_mean', 'spectral_rolloff_var',
-        'zero_crossing_rate_mean', 'zero_crossing_rate_var', 'harmony_mean', 'harmony_var',
-        'percussive_mean', 'percussive_var', 'tempo'
-    ] + [f'mfccs_{i + 1}_mean' for i in range(20)] + [f'mfccs_{i + 1}_var' for i in range(20)]
 
-    all_files = [os.path.join(root, file) for root, dirs, files in os.walk(path_to_data) for file in files if file.endswith('.mp3')]
+
+def process_data():
+    info = pd.read_csv(path_to_info)
+    count = 0
+
+    columns = [
+                  'chroma_stft_mean', 'chroma_stft_var', 'rms_mean', 'rms_var',
+                  'spectral_centroid_mean', 'spectral_centroid_var', 'spectral_bandwidth_mean',
+                  'spectral_bandwidth_var', 'spectral_rolloff_mean', 'spectral_rolloff_var',
+                  'zero_crossing_rate_mean', 'zero_crossing_rate_var', 'harmony_mean', 'harmony_var',
+                  'percussive_mean', 'percussive_var', 'tempo'
+              ] + [f'mfccs_{i + 1}_mean' for i in range(20)] + [f'mfccs_{i + 1}_var' for i in range(20)]
+
+    all_files = [os.path.join(root, file) for root, dirs, files in os.walk(path_to_data) for file in files if
+                 file.endswith('.mp3')]
 
     print(f"Found {len(all_files)} files")
 
     results = []
     for file in tqdm.tqdm(all_files, desc='Extracting features'):
+        # if count == 10:
+        #     break
         track_id = os.path.basename(file).split('-')[1].split('.')[0]
+        spotify_id = info[info['track_id'] == track_id]['spotify_id'].values[0]
         genre = os.path.basename(file).split('-')[0]
 
         features = extract_feature(file)
-        results.append([track_id, genre] + [features[col] for col in columns])
+        results.append([track_id, spotify_id, genre] + [features[col] for col in columns])
+        count += 1
 
-    df = pd.DataFrame(results, columns=['track_id', 'genre'] + columns)
+    df = pd.DataFrame(results, columns=['track_id', 'spotify_id', 'genre'] + columns)
     df.set_index('track_id', inplace=True)
     df.to_csv('data/extracted_features.csv')
     print("Features extracted and saved to 'data/extracted_features.csv'")
 
     return df
+
 
 if __name__ == '__main__':
     process_data()
