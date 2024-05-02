@@ -3,6 +3,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
 
+
 def auth():
     load_dotenv()
     SPOTIFY_CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
@@ -24,4 +25,3 @@ def get_spotify_recommendations(seed_tracks, num_tracks=20):
         results = sp.recommendations(seed_tracks=[track_id], limit=num_tracks)
         related_tracks.extend([(track['id'], track['name']) for track in results['tracks']])
     return related_tracks
-
