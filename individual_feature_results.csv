@@ -1,0 +1,571 @@
+Feature,Classifier,Accuracy,Normalization
+chroma_stft_mean,KNN Euclidean,0.14,Scaled
+chroma_stft_mean,KNN Cosine,0.07333333333333333,Scaled
+chroma_stft_mean,Random Forest,0.11,Scaled
+chroma_stft_mean,SVC,0.11333333333333333,Scaled
+chroma_stft_mean,XGB,0.13,Scaled
+chroma_stft_mean,KNN Euclidean,0.14,Normalized
+chroma_stft_mean,KNN Cosine,0.07333333333333333,Normalized
+chroma_stft_mean,Random Forest,0.11,Normalized
+chroma_stft_mean,SVC,0.08333333333333333,Normalized
+chroma_stft_mean,XGB,0.13,Normalized
+chroma_stft_var,KNN Euclidean,0.08666666666666667,Scaled
+chroma_stft_var,KNN Cosine,0.07,Scaled
+chroma_stft_var,Random Forest,0.11,Scaled
+chroma_stft_var,SVC,0.12,Scaled
+chroma_stft_var,XGB,0.13333333333333333,Scaled
+chroma_stft_var,KNN Euclidean,0.08666666666666667,Normalized
+chroma_stft_var,KNN Cosine,0.07,Normalized
+chroma_stft_var,Random Forest,0.11333333333333333,Normalized
+chroma_stft_var,SVC,0.07666666666666666,Normalized
+chroma_stft_var,XGB,0.13333333333333333,Normalized
+rms_mean,KNN Euclidean,0.07666666666666666,Scaled
+rms_mean,KNN Cosine,0.08666666666666667,Scaled
+rms_mean,Random Forest,0.07333333333333333,Scaled
+rms_mean,SVC,0.07,Scaled
+rms_mean,XGB,0.09666666666666666,Scaled
+rms_mean,KNN Euclidean,0.07666666666666666,Normalized
+rms_mean,KNN Cosine,0.08666666666666667,Normalized
+rms_mean,Random Forest,0.07333333333333333,Normalized
+rms_mean,SVC,0.04,Normalized
+rms_mean,XGB,0.09666666666666666,Normalized
+rms_var,KNN Euclidean,0.09666666666666666,Scaled
+rms_var,KNN Cosine,0.03666666666666667,Scaled
+rms_var,Random Forest,0.09333333333333334,Scaled
+rms_var,SVC,0.1,Scaled
+rms_var,XGB,0.1,Scaled
+rms_var,KNN Euclidean,0.09666666666666666,Normalized
+rms_var,KNN Cosine,0.03666666666666667,Normalized
+rms_var,Random Forest,0.09333333333333334,Normalized
+rms_var,SVC,0.04666666666666667,Normalized
+rms_var,XGB,0.1,Normalized
+spectral_centroid_mean,KNN Euclidean,0.06333333333333334,Scaled
+spectral_centroid_mean,KNN Cosine,0.07,Scaled
+spectral_centroid_mean,Random Forest,0.08,Scaled
+spectral_centroid_mean,SVC,0.11,Scaled
+spectral_centroid_mean,XGB,0.08,Scaled
+spectral_centroid_mean,KNN Euclidean,0.06333333333333334,Normalized
+spectral_centroid_mean,KNN Cosine,0.07,Normalized
+spectral_centroid_mean,Random Forest,0.08,Normalized
+spectral_centroid_mean,SVC,0.08333333333333333,Normalized
+spectral_centroid_mean,XGB,0.08,Normalized
+spectral_centroid_var,KNN Euclidean,0.06666666666666667,Scaled
+spectral_centroid_var,KNN Cosine,0.056666666666666664,Scaled
+spectral_centroid_var,Random Forest,0.07333333333333333,Scaled
+spectral_centroid_var,SVC,0.10333333333333333,Scaled
+spectral_centroid_var,XGB,0.09,Scaled
+spectral_centroid_var,KNN Euclidean,0.06666666666666667,Normalized
+spectral_centroid_var,KNN Cosine,0.056666666666666664,Normalized
+spectral_centroid_var,Random Forest,0.07333333333333333,Normalized
+spectral_centroid_var,SVC,0.05333333333333334,Normalized
+spectral_centroid_var,XGB,0.09,Normalized
+spectral_bandwidth_mean,KNN Euclidean,0.06,Scaled
+spectral_bandwidth_mean,KNN Cosine,0.08333333333333333,Scaled
+spectral_bandwidth_mean,Random Forest,0.04666666666666667,Scaled
+spectral_bandwidth_mean,SVC,0.07666666666666666,Scaled
+spectral_bandwidth_mean,XGB,0.07333333333333333,Scaled
+spectral_bandwidth_mean,KNN Euclidean,0.06,Normalized
+spectral_bandwidth_mean,KNN Cosine,0.08333333333333333,Normalized
+spectral_bandwidth_mean,Random Forest,0.04666666666666667,Normalized
+spectral_bandwidth_mean,SVC,0.056666666666666664,Normalized
+spectral_bandwidth_mean,XGB,0.07333333333333333,Normalized
+spectral_bandwidth_var,KNN Euclidean,0.09,Scaled
+spectral_bandwidth_var,KNN Cosine,0.07,Scaled
+spectral_bandwidth_var,Random Forest,0.08,Scaled
+spectral_bandwidth_var,SVC,0.07666666666666666,Scaled
+spectral_bandwidth_var,XGB,0.10333333333333333,Scaled
+spectral_bandwidth_var,KNN Euclidean,0.09,Normalized
+spectral_bandwidth_var,KNN Cosine,0.07,Normalized
+spectral_bandwidth_var,Random Forest,0.08,Normalized
+spectral_bandwidth_var,SVC,0.05333333333333334,Normalized
+spectral_bandwidth_var,XGB,0.10333333333333333,Normalized
+spectral_rolloff_mean,KNN Euclidean,0.07,Scaled
+spectral_rolloff_mean,KNN Cosine,0.06666666666666667,Scaled
+spectral_rolloff_mean,Random Forest,0.07333333333333333,Scaled
+spectral_rolloff_mean,SVC,0.10333333333333333,Scaled
+spectral_rolloff_mean,XGB,0.08,Scaled
+spectral_rolloff_mean,KNN Euclidean,0.07,Normalized
+spectral_rolloff_mean,KNN Cosine,0.06666666666666667,Normalized
+spectral_rolloff_mean,Random Forest,0.07333333333333333,Normalized
+spectral_rolloff_mean,SVC,0.07333333333333333,Normalized
+spectral_rolloff_mean,XGB,0.08,Normalized
+spectral_rolloff_var,KNN Euclidean,0.07333333333333333,Scaled
+spectral_rolloff_var,KNN Cosine,0.08666666666666667,Scaled
+spectral_rolloff_var,Random Forest,0.05333333333333334,Scaled
+spectral_rolloff_var,SVC,0.11,Scaled
+spectral_rolloff_var,XGB,0.08666666666666667,Scaled
+spectral_rolloff_var,KNN Euclidean,0.07333333333333333,Normalized
+spectral_rolloff_var,KNN Cosine,0.08666666666666667,Normalized
+spectral_rolloff_var,Random Forest,0.05333333333333334,Normalized
+spectral_rolloff_var,SVC,0.06,Normalized
+spectral_rolloff_var,XGB,0.08666666666666667,Normalized
+zero_crossing_rate_mean,KNN Euclidean,0.09,Scaled
+zero_crossing_rate_mean,KNN Cosine,0.05,Scaled
+zero_crossing_rate_mean,Random Forest,0.09,Scaled
+zero_crossing_rate_mean,SVC,0.11666666666666667,Scaled
+zero_crossing_rate_mean,XGB,0.07666666666666666,Scaled
+zero_crossing_rate_mean,KNN Euclidean,0.09,Normalized
+zero_crossing_rate_mean,KNN Cosine,0.05,Normalized
+zero_crossing_rate_mean,Random Forest,0.09,Normalized
+zero_crossing_rate_mean,SVC,0.08,Normalized
+zero_crossing_rate_mean,XGB,0.07666666666666666,Normalized
+zero_crossing_rate_var,KNN Euclidean,0.08333333333333333,Scaled
+zero_crossing_rate_var,KNN Cosine,0.08333333333333333,Scaled
+zero_crossing_rate_var,Random Forest,0.08333333333333333,Scaled
+zero_crossing_rate_var,SVC,0.11,Scaled
+zero_crossing_rate_var,XGB,0.10666666666666667,Scaled
+zero_crossing_rate_var,KNN Euclidean,0.08333333333333333,Normalized
+zero_crossing_rate_var,KNN Cosine,0.08333333333333333,Normalized
+zero_crossing_rate_var,Random Forest,0.08333333333333333,Normalized
+zero_crossing_rate_var,SVC,0.056666666666666664,Normalized
+zero_crossing_rate_var,XGB,0.10666666666666667,Normalized
+harmony_mean,KNN Euclidean,0.08666666666666667,Scaled
+harmony_mean,KNN Cosine,0.08,Scaled
+harmony_mean,Random Forest,0.06333333333333334,Scaled
+harmony_mean,SVC,0.05,Scaled
+harmony_mean,XGB,0.1,Scaled
+harmony_mean,KNN Euclidean,0.08666666666666667,Normalized
+harmony_mean,KNN Cosine,0.08,Normalized
+harmony_mean,Random Forest,0.07,Normalized
+harmony_mean,SVC,0.05,Normalized
+harmony_mean,XGB,0.1,Normalized
+harmony_var,KNN Euclidean,0.07,Scaled
+harmony_var,KNN Cosine,0.043333333333333335,Scaled
+harmony_var,Random Forest,0.06666666666666667,Scaled
+harmony_var,SVC,0.06333333333333334,Scaled
+harmony_var,XGB,0.09,Scaled
+harmony_var,KNN Euclidean,0.07,Normalized
+harmony_var,KNN Cosine,0.043333333333333335,Normalized
+harmony_var,Random Forest,0.06666666666666667,Normalized
+harmony_var,SVC,0.03333333333333333,Normalized
+harmony_var,XGB,0.09,Normalized
+percussive_mean,KNN Euclidean,0.06,Scaled
+percussive_mean,KNN Cosine,0.08333333333333333,Scaled
+percussive_mean,Random Forest,0.06333333333333334,Scaled
+percussive_mean,SVC,0.05,Scaled
+percussive_mean,XGB,0.07333333333333333,Scaled
+percussive_mean,KNN Euclidean,0.06,Normalized
+percussive_mean,KNN Cosine,0.08333333333333333,Normalized
+percussive_mean,Random Forest,0.06333333333333334,Normalized
+percussive_mean,SVC,0.05,Normalized
+percussive_mean,XGB,0.07333333333333333,Normalized
+percussive_var,KNN Euclidean,0.09333333333333334,Scaled
+percussive_var,KNN Cosine,0.05,Scaled
+percussive_var,Random Forest,0.08333333333333333,Scaled
+percussive_var,SVC,0.12,Scaled
+percussive_var,XGB,0.10666666666666667,Scaled
+percussive_var,KNN Euclidean,0.09333333333333334,Normalized
+percussive_var,KNN Cosine,0.05,Normalized
+percussive_var,Random Forest,0.08333333333333333,Normalized
+percussive_var,SVC,0.05,Normalized
+percussive_var,XGB,0.10666666666666667,Normalized
+tempo,KNN Euclidean,0.043333333333333335,Scaled
+tempo,KNN Cosine,0.04666666666666667,Scaled
+tempo,Random Forest,0.06666666666666667,Scaled
+tempo,SVC,0.05333333333333334,Scaled
+tempo,XGB,0.07666666666666666,Scaled
+tempo,KNN Euclidean,0.043333333333333335,Normalized
+tempo,KNN Cosine,0.04666666666666667,Normalized
+tempo,Random Forest,0.06666666666666667,Normalized
+tempo,SVC,0.04,Normalized
+tempo,XGB,0.07666666666666666,Normalized
+mfccs_1_mean,KNN Euclidean,0.09666666666666666,Scaled
+mfccs_1_mean,KNN Cosine,0.07,Scaled
+mfccs_1_mean,Random Forest,0.10666666666666667,Scaled
+mfccs_1_mean,SVC,0.11,Scaled
+mfccs_1_mean,XGB,0.12,Scaled
+mfccs_1_mean,KNN Euclidean,0.09666666666666666,Normalized
+mfccs_1_mean,KNN Cosine,0.07,Normalized
+mfccs_1_mean,Random Forest,0.10666666666666667,Normalized
+mfccs_1_mean,SVC,0.07,Normalized
+mfccs_1_mean,XGB,0.12,Normalized
+mfccs_2_mean,KNN Euclidean,0.08333333333333333,Scaled
+mfccs_2_mean,KNN Cosine,0.09,Scaled
+mfccs_2_mean,Random Forest,0.1,Scaled
+mfccs_2_mean,SVC,0.12666666666666668,Scaled
+mfccs_2_mean,XGB,0.12,Scaled
+mfccs_2_mean,KNN Euclidean,0.08333333333333333,Normalized
+mfccs_2_mean,KNN Cosine,0.09,Normalized
+mfccs_2_mean,Random Forest,0.1,Normalized
+mfccs_2_mean,SVC,0.06,Normalized
+mfccs_2_mean,XGB,0.12,Normalized
+mfccs_3_mean,KNN Euclidean,0.09333333333333334,Scaled
+mfccs_3_mean,KNN Cosine,0.08,Scaled
+mfccs_3_mean,Random Forest,0.056666666666666664,Scaled
+mfccs_3_mean,SVC,0.08333333333333333,Scaled
+mfccs_3_mean,XGB,0.06666666666666667,Scaled
+mfccs_3_mean,KNN Euclidean,0.09333333333333334,Normalized
+mfccs_3_mean,KNN Cosine,0.08,Normalized
+mfccs_3_mean,Random Forest,0.056666666666666664,Normalized
+mfccs_3_mean,SVC,0.06,Normalized
+mfccs_3_mean,XGB,0.06666666666666667,Normalized
+mfccs_4_mean,KNN Euclidean,0.07666666666666666,Scaled
+mfccs_4_mean,KNN Cosine,0.09,Scaled
+mfccs_4_mean,Random Forest,0.07666666666666666,Scaled
+mfccs_4_mean,SVC,0.06666666666666667,Scaled
+mfccs_4_mean,XGB,0.09,Scaled
+mfccs_4_mean,KNN Euclidean,0.07666666666666666,Normalized
+mfccs_4_mean,KNN Cosine,0.09,Normalized
+mfccs_4_mean,Random Forest,0.07666666666666666,Normalized
+mfccs_4_mean,SVC,0.056666666666666664,Normalized
+mfccs_4_mean,XGB,0.09,Normalized
+mfccs_5_mean,KNN Euclidean,0.08,Scaled
+mfccs_5_mean,KNN Cosine,0.05,Scaled
+mfccs_5_mean,Random Forest,0.06666666666666667,Scaled
+mfccs_5_mean,SVC,0.03666666666666667,Scaled
+mfccs_5_mean,XGB,0.08333333333333333,Scaled
+mfccs_5_mean,KNN Euclidean,0.08,Normalized
+mfccs_5_mean,KNN Cosine,0.05,Normalized
+mfccs_5_mean,Random Forest,0.06666666666666667,Normalized
+mfccs_5_mean,SVC,0.03333333333333333,Normalized
+mfccs_5_mean,XGB,0.08333333333333333,Normalized
+mfccs_6_mean,KNN Euclidean,0.05,Scaled
+mfccs_6_mean,KNN Cosine,0.07666666666666666,Scaled
+mfccs_6_mean,Random Forest,0.06,Scaled
+mfccs_6_mean,SVC,0.05333333333333334,Scaled
+mfccs_6_mean,XGB,0.08,Scaled
+mfccs_6_mean,KNN Euclidean,0.05,Normalized
+mfccs_6_mean,KNN Cosine,0.07666666666666666,Normalized
+mfccs_6_mean,Random Forest,0.06,Normalized
+mfccs_6_mean,SVC,0.043333333333333335,Normalized
+mfccs_6_mean,XGB,0.08,Normalized
+mfccs_7_mean,KNN Euclidean,0.05333333333333334,Scaled
+mfccs_7_mean,KNN Cosine,0.07,Scaled
+mfccs_7_mean,Random Forest,0.07666666666666666,Scaled
+mfccs_7_mean,SVC,0.06,Scaled
+mfccs_7_mean,XGB,0.05,Scaled
+mfccs_7_mean,KNN Euclidean,0.05333333333333334,Normalized
+mfccs_7_mean,KNN Cosine,0.07,Normalized
+mfccs_7_mean,Random Forest,0.07666666666666666,Normalized
+mfccs_7_mean,SVC,0.056666666666666664,Normalized
+mfccs_7_mean,XGB,0.05,Normalized
+mfccs_8_mean,KNN Euclidean,0.10666666666666667,Scaled
+mfccs_8_mean,KNN Cosine,0.06333333333333334,Scaled
+mfccs_8_mean,Random Forest,0.08666666666666667,Scaled
+mfccs_8_mean,SVC,0.07666666666666666,Scaled
+mfccs_8_mean,XGB,0.09333333333333334,Scaled
+mfccs_8_mean,KNN Euclidean,0.10666666666666667,Normalized
+mfccs_8_mean,KNN Cosine,0.06333333333333334,Normalized
+mfccs_8_mean,Random Forest,0.08666666666666667,Normalized
+mfccs_8_mean,SVC,0.06666666666666667,Normalized
+mfccs_8_mean,XGB,0.09333333333333334,Normalized
+mfccs_9_mean,KNN Euclidean,0.056666666666666664,Scaled
+mfccs_9_mean,KNN Cosine,0.05,Scaled
+mfccs_9_mean,Random Forest,0.06333333333333334,Scaled
+mfccs_9_mean,SVC,0.07,Scaled
+mfccs_9_mean,XGB,0.07,Scaled
+mfccs_9_mean,KNN Euclidean,0.056666666666666664,Normalized
+mfccs_9_mean,KNN Cosine,0.05,Normalized
+mfccs_9_mean,Random Forest,0.06333333333333334,Normalized
+mfccs_9_mean,SVC,0.06333333333333334,Normalized
+mfccs_9_mean,XGB,0.07,Normalized
+mfccs_10_mean,KNN Euclidean,0.07666666666666666,Scaled
+mfccs_10_mean,KNN Cosine,0.07333333333333333,Scaled
+mfccs_10_mean,Random Forest,0.06,Scaled
+mfccs_10_mean,SVC,0.06666666666666667,Scaled
+mfccs_10_mean,XGB,0.07666666666666666,Scaled
+mfccs_10_mean,KNN Euclidean,0.07666666666666666,Normalized
+mfccs_10_mean,KNN Cosine,0.07333333333333333,Normalized
+mfccs_10_mean,Random Forest,0.06,Normalized
+mfccs_10_mean,SVC,0.03666666666666667,Normalized
+mfccs_10_mean,XGB,0.07666666666666666,Normalized
+mfccs_11_mean,KNN Euclidean,0.09,Scaled
+mfccs_11_mean,KNN Cosine,0.07666666666666666,Scaled
+mfccs_11_mean,Random Forest,0.06333333333333334,Scaled
+mfccs_11_mean,SVC,0.06333333333333334,Scaled
+mfccs_11_mean,XGB,0.09,Scaled
+mfccs_11_mean,KNN Euclidean,0.09,Normalized
+mfccs_11_mean,KNN Cosine,0.07666666666666666,Normalized
+mfccs_11_mean,Random Forest,0.06333333333333334,Normalized
+mfccs_11_mean,SVC,0.06666666666666667,Normalized
+mfccs_11_mean,XGB,0.09,Normalized
+mfccs_12_mean,KNN Euclidean,0.08,Scaled
+mfccs_12_mean,KNN Cosine,0.11333333333333333,Scaled
+mfccs_12_mean,Random Forest,0.08,Scaled
+mfccs_12_mean,SVC,0.07,Scaled
+mfccs_12_mean,XGB,0.07333333333333333,Scaled
+mfccs_12_mean,KNN Euclidean,0.08,Normalized
+mfccs_12_mean,KNN Cosine,0.11333333333333333,Normalized
+mfccs_12_mean,Random Forest,0.08,Normalized
+mfccs_12_mean,SVC,0.07333333333333333,Normalized
+mfccs_12_mean,XGB,0.07333333333333333,Normalized
+mfccs_13_mean,KNN Euclidean,0.05333333333333334,Scaled
+mfccs_13_mean,KNN Cosine,0.05,Scaled
+mfccs_13_mean,Random Forest,0.07333333333333333,Scaled
+mfccs_13_mean,SVC,0.07333333333333333,Scaled
+mfccs_13_mean,XGB,0.06666666666666667,Scaled
+mfccs_13_mean,KNN Euclidean,0.05333333333333334,Normalized
+mfccs_13_mean,KNN Cosine,0.05,Normalized
+mfccs_13_mean,Random Forest,0.07333333333333333,Normalized
+mfccs_13_mean,SVC,0.05333333333333334,Normalized
+mfccs_13_mean,XGB,0.06666666666666667,Normalized
+mfccs_14_mean,KNN Euclidean,0.09333333333333334,Scaled
+mfccs_14_mean,KNN Cosine,0.06,Scaled
+mfccs_14_mean,Random Forest,0.10666666666666667,Scaled
+mfccs_14_mean,SVC,0.10333333333333333,Scaled
+mfccs_14_mean,XGB,0.13,Scaled
+mfccs_14_mean,KNN Euclidean,0.09333333333333334,Normalized
+mfccs_14_mean,KNN Cosine,0.06,Normalized
+mfccs_14_mean,Random Forest,0.10666666666666667,Normalized
+mfccs_14_mean,SVC,0.03333333333333333,Normalized
+mfccs_14_mean,XGB,0.13,Normalized
+mfccs_15_mean,KNN Euclidean,0.08,Scaled
+mfccs_15_mean,KNN Cosine,0.04666666666666667,Scaled
+mfccs_15_mean,Random Forest,0.08666666666666667,Scaled
+mfccs_15_mean,SVC,0.05333333333333334,Scaled
+mfccs_15_mean,XGB,0.07666666666666666,Scaled
+mfccs_15_mean,KNN Euclidean,0.08,Normalized
+mfccs_15_mean,KNN Cosine,0.04666666666666667,Normalized
+mfccs_15_mean,Random Forest,0.08666666666666667,Normalized
+mfccs_15_mean,SVC,0.05333333333333334,Normalized
+mfccs_15_mean,XGB,0.07666666666666666,Normalized
+mfccs_16_mean,KNN Euclidean,0.07333333333333333,Scaled
+mfccs_16_mean,KNN Cosine,0.04666666666666667,Scaled
+mfccs_16_mean,Random Forest,0.1,Scaled
+mfccs_16_mean,SVC,0.08,Scaled
+mfccs_16_mean,XGB,0.07666666666666666,Scaled
+mfccs_16_mean,KNN Euclidean,0.07333333333333333,Normalized
+mfccs_16_mean,KNN Cosine,0.04666666666666667,Normalized
+mfccs_16_mean,Random Forest,0.1,Normalized
+mfccs_16_mean,SVC,0.056666666666666664,Normalized
+mfccs_16_mean,XGB,0.07666666666666666,Normalized
+mfccs_17_mean,KNN Euclidean,0.05333333333333334,Scaled
+mfccs_17_mean,KNN Cosine,0.07,Scaled
+mfccs_17_mean,Random Forest,0.056666666666666664,Scaled
+mfccs_17_mean,SVC,0.06333333333333334,Scaled
+mfccs_17_mean,XGB,0.09333333333333334,Scaled
+mfccs_17_mean,KNN Euclidean,0.05333333333333334,Normalized
+mfccs_17_mean,KNN Cosine,0.07,Normalized
+mfccs_17_mean,Random Forest,0.056666666666666664,Normalized
+mfccs_17_mean,SVC,0.04,Normalized
+mfccs_17_mean,XGB,0.09333333333333334,Normalized
+mfccs_18_mean,KNN Euclidean,0.06333333333333334,Scaled
+mfccs_18_mean,KNN Cosine,0.07,Scaled
+mfccs_18_mean,Random Forest,0.06333333333333334,Scaled
+mfccs_18_mean,SVC,0.06333333333333334,Scaled
+mfccs_18_mean,XGB,0.07,Scaled
+mfccs_18_mean,KNN Euclidean,0.06333333333333334,Normalized
+mfccs_18_mean,KNN Cosine,0.07,Normalized
+mfccs_18_mean,Random Forest,0.06333333333333334,Normalized
+mfccs_18_mean,SVC,0.06,Normalized
+mfccs_18_mean,XGB,0.07,Normalized
+mfccs_19_mean,KNN Euclidean,0.06,Scaled
+mfccs_19_mean,KNN Cosine,0.056666666666666664,Scaled
+mfccs_19_mean,Random Forest,0.07333333333333333,Scaled
+mfccs_19_mean,SVC,0.06666666666666667,Scaled
+mfccs_19_mean,XGB,0.06,Scaled
+mfccs_19_mean,KNN Euclidean,0.06,Normalized
+mfccs_19_mean,KNN Cosine,0.056666666666666664,Normalized
+mfccs_19_mean,Random Forest,0.07333333333333333,Normalized
+mfccs_19_mean,SVC,0.06333333333333334,Normalized
+mfccs_19_mean,XGB,0.06,Normalized
+mfccs_20_mean,KNN Euclidean,0.09666666666666666,Scaled
+mfccs_20_mean,KNN Cosine,0.07666666666666666,Scaled
+mfccs_20_mean,Random Forest,0.1,Scaled
+mfccs_20_mean,SVC,0.056666666666666664,Scaled
+mfccs_20_mean,XGB,0.07333333333333333,Scaled
+mfccs_20_mean,KNN Euclidean,0.09666666666666666,Normalized
+mfccs_20_mean,KNN Cosine,0.07666666666666666,Normalized
+mfccs_20_mean,Random Forest,0.1,Normalized
+mfccs_20_mean,SVC,0.06,Normalized
+mfccs_20_mean,XGB,0.07333333333333333,Normalized
+mfccs_1_var,KNN Euclidean,0.08333333333333333,Scaled
+mfccs_1_var,KNN Cosine,0.06666666666666667,Scaled
+mfccs_1_var,Random Forest,0.09666666666666666,Scaled
+mfccs_1_var,SVC,0.08333333333333333,Scaled
+mfccs_1_var,XGB,0.12333333333333334,Scaled
+mfccs_1_var,KNN Euclidean,0.08333333333333333,Normalized
+mfccs_1_var,KNN Cosine,0.06666666666666667,Normalized
+mfccs_1_var,Random Forest,0.09666666666666666,Normalized
+mfccs_1_var,SVC,0.05333333333333334,Normalized
+mfccs_1_var,XGB,0.12333333333333334,Normalized
+mfccs_2_var,KNN Euclidean,0.06333333333333334,Scaled
+mfccs_2_var,KNN Cosine,0.07666666666666666,Scaled
+mfccs_2_var,Random Forest,0.07333333333333333,Scaled
+mfccs_2_var,SVC,0.11666666666666667,Scaled
+mfccs_2_var,XGB,0.07333333333333333,Scaled
+mfccs_2_var,KNN Euclidean,0.06333333333333334,Normalized
+mfccs_2_var,KNN Cosine,0.07666666666666666,Normalized
+mfccs_2_var,Random Forest,0.07,Normalized
+mfccs_2_var,SVC,0.056666666666666664,Normalized
+mfccs_2_var,XGB,0.07333333333333333,Normalized
+mfccs_3_var,KNN Euclidean,0.06666666666666667,Scaled
+mfccs_3_var,KNN Cosine,0.06,Scaled
+mfccs_3_var,Random Forest,0.09666666666666666,Scaled
+mfccs_3_var,SVC,0.1,Scaled
+mfccs_3_var,XGB,0.10666666666666667,Scaled
+mfccs_3_var,KNN Euclidean,0.06666666666666667,Normalized
+mfccs_3_var,KNN Cosine,0.06,Normalized
+mfccs_3_var,Random Forest,0.09666666666666666,Normalized
+mfccs_3_var,SVC,0.05333333333333334,Normalized
+mfccs_3_var,XGB,0.10666666666666667,Normalized
+mfccs_4_var,KNN Euclidean,0.08666666666666667,Scaled
+mfccs_4_var,KNN Cosine,0.08666666666666667,Scaled
+mfccs_4_var,Random Forest,0.08,Scaled
+mfccs_4_var,SVC,0.09333333333333334,Scaled
+mfccs_4_var,XGB,0.09666666666666666,Scaled
+mfccs_4_var,KNN Euclidean,0.08666666666666667,Normalized
+mfccs_4_var,KNN Cosine,0.08666666666666667,Normalized
+mfccs_4_var,Random Forest,0.08,Normalized
+mfccs_4_var,SVC,0.05333333333333334,Normalized
+mfccs_4_var,XGB,0.09666666666666666,Normalized
+mfccs_5_var,KNN Euclidean,0.09666666666666666,Scaled
+mfccs_5_var,KNN Cosine,0.06,Scaled
+mfccs_5_var,Random Forest,0.1,Scaled
+mfccs_5_var,SVC,0.09666666666666666,Scaled
+mfccs_5_var,XGB,0.11333333333333333,Scaled
+mfccs_5_var,KNN Euclidean,0.09666666666666666,Normalized
+mfccs_5_var,KNN Cosine,0.06,Normalized
+mfccs_5_var,Random Forest,0.1,Normalized
+mfccs_5_var,SVC,0.06,Normalized
+mfccs_5_var,XGB,0.11333333333333333,Normalized
+mfccs_6_var,KNN Euclidean,0.056666666666666664,Scaled
+mfccs_6_var,KNN Cosine,0.056666666666666664,Scaled
+mfccs_6_var,Random Forest,0.08333333333333333,Scaled
+mfccs_6_var,SVC,0.10333333333333333,Scaled
+mfccs_6_var,XGB,0.09333333333333334,Scaled
+mfccs_6_var,KNN Euclidean,0.056666666666666664,Normalized
+mfccs_6_var,KNN Cosine,0.056666666666666664,Normalized
+mfccs_6_var,Random Forest,0.08333333333333333,Normalized
+mfccs_6_var,SVC,0.05333333333333334,Normalized
+mfccs_6_var,XGB,0.09333333333333334,Normalized
+mfccs_7_var,KNN Euclidean,0.06333333333333334,Scaled
+mfccs_7_var,KNN Cosine,0.06666666666666667,Scaled
+mfccs_7_var,Random Forest,0.06333333333333334,Scaled
+mfccs_7_var,SVC,0.09333333333333334,Scaled
+mfccs_7_var,XGB,0.07333333333333333,Scaled
+mfccs_7_var,KNN Euclidean,0.06333333333333334,Normalized
+mfccs_7_var,KNN Cosine,0.06666666666666667,Normalized
+mfccs_7_var,Random Forest,0.06333333333333334,Normalized
+mfccs_7_var,SVC,0.05,Normalized
+mfccs_7_var,XGB,0.07333333333333333,Normalized
+mfccs_8_var,KNN Euclidean,0.06,Scaled
+mfccs_8_var,KNN Cosine,0.04666666666666667,Scaled
+mfccs_8_var,Random Forest,0.07666666666666666,Scaled
+mfccs_8_var,SVC,0.09,Scaled
+mfccs_8_var,XGB,0.09333333333333334,Scaled
+mfccs_8_var,KNN Euclidean,0.06,Normalized
+mfccs_8_var,KNN Cosine,0.04666666666666667,Normalized
+mfccs_8_var,Random Forest,0.07666666666666666,Normalized
+mfccs_8_var,SVC,0.056666666666666664,Normalized
+mfccs_8_var,XGB,0.09333333333333334,Normalized
+mfccs_9_var,KNN Euclidean,0.09666666666666666,Scaled
+mfccs_9_var,KNN Cosine,0.07666666666666666,Scaled
+mfccs_9_var,Random Forest,0.10666666666666667,Scaled
+mfccs_9_var,SVC,0.09666666666666666,Scaled
+mfccs_9_var,XGB,0.12,Scaled
+mfccs_9_var,KNN Euclidean,0.09666666666666666,Normalized
+mfccs_9_var,KNN Cosine,0.07666666666666666,Normalized
+mfccs_9_var,Random Forest,0.10666666666666667,Normalized
+mfccs_9_var,SVC,0.056666666666666664,Normalized
+mfccs_9_var,XGB,0.12,Normalized
+mfccs_10_var,KNN Euclidean,0.08666666666666667,Scaled
+mfccs_10_var,KNN Cosine,0.06,Scaled
+mfccs_10_var,Random Forest,0.08666666666666667,Scaled
+mfccs_10_var,SVC,0.09333333333333334,Scaled
+mfccs_10_var,XGB,0.09333333333333334,Scaled
+mfccs_10_var,KNN Euclidean,0.08666666666666667,Normalized
+mfccs_10_var,KNN Cosine,0.06,Normalized
+mfccs_10_var,Random Forest,0.08666666666666667,Normalized
+mfccs_10_var,SVC,0.07,Normalized
+mfccs_10_var,XGB,0.09333333333333334,Normalized
+mfccs_11_var,KNN Euclidean,0.07666666666666666,Scaled
+mfccs_11_var,KNN Cosine,0.056666666666666664,Scaled
+mfccs_11_var,Random Forest,0.056666666666666664,Scaled
+mfccs_11_var,SVC,0.09,Scaled
+mfccs_11_var,XGB,0.09,Scaled
+mfccs_11_var,KNN Euclidean,0.07666666666666666,Normalized
+mfccs_11_var,KNN Cosine,0.056666666666666664,Normalized
+mfccs_11_var,Random Forest,0.056666666666666664,Normalized
+mfccs_11_var,SVC,0.06666666666666667,Normalized
+mfccs_11_var,XGB,0.09,Normalized
+mfccs_12_var,KNN Euclidean,0.06666666666666667,Scaled
+mfccs_12_var,KNN Cosine,0.09666666666666666,Scaled
+mfccs_12_var,Random Forest,0.09,Scaled
+mfccs_12_var,SVC,0.07333333333333333,Scaled
+mfccs_12_var,XGB,0.05,Scaled
+mfccs_12_var,KNN Euclidean,0.06666666666666667,Normalized
+mfccs_12_var,KNN Cosine,0.09666666666666666,Normalized
+mfccs_12_var,Random Forest,0.09,Normalized
+mfccs_12_var,SVC,0.04666666666666667,Normalized
+mfccs_12_var,XGB,0.05,Normalized
+mfccs_13_var,KNN Euclidean,0.07,Scaled
+mfccs_13_var,KNN Cosine,0.06666666666666667,Scaled
+mfccs_13_var,Random Forest,0.08666666666666667,Scaled
+mfccs_13_var,SVC,0.09666666666666666,Scaled
+mfccs_13_var,XGB,0.1,Scaled
+mfccs_13_var,KNN Euclidean,0.07,Normalized
+mfccs_13_var,KNN Cosine,0.06666666666666667,Normalized
+mfccs_13_var,Random Forest,0.08666666666666667,Normalized
+mfccs_13_var,SVC,0.05333333333333334,Normalized
+mfccs_13_var,XGB,0.1,Normalized
+mfccs_14_var,KNN Euclidean,0.1,Scaled
+mfccs_14_var,KNN Cosine,0.056666666666666664,Scaled
+mfccs_14_var,Random Forest,0.07,Scaled
+mfccs_14_var,SVC,0.09333333333333334,Scaled
+mfccs_14_var,XGB,0.08333333333333333,Scaled
+mfccs_14_var,KNN Euclidean,0.1,Normalized
+mfccs_14_var,KNN Cosine,0.056666666666666664,Normalized
+mfccs_14_var,Random Forest,0.07,Normalized
+mfccs_14_var,SVC,0.06,Normalized
+mfccs_14_var,XGB,0.08333333333333333,Normalized
+mfccs_15_var,KNN Euclidean,0.1,Scaled
+mfccs_15_var,KNN Cosine,0.09,Scaled
+mfccs_15_var,Random Forest,0.11333333333333333,Scaled
+mfccs_15_var,SVC,0.09666666666666666,Scaled
+mfccs_15_var,XGB,0.10333333333333333,Scaled
+mfccs_15_var,KNN Euclidean,0.1,Normalized
+mfccs_15_var,KNN Cosine,0.09,Normalized
+mfccs_15_var,Random Forest,0.11333333333333333,Normalized
+mfccs_15_var,SVC,0.056666666666666664,Normalized
+mfccs_15_var,XGB,0.10333333333333333,Normalized
+mfccs_16_var,KNN Euclidean,0.08,Scaled
+mfccs_16_var,KNN Cosine,0.06333333333333334,Scaled
+mfccs_16_var,Random Forest,0.08333333333333333,Scaled
+mfccs_16_var,SVC,0.10333333333333333,Scaled
+mfccs_16_var,XGB,0.09,Scaled
+mfccs_16_var,KNN Euclidean,0.08,Normalized
+mfccs_16_var,KNN Cosine,0.06333333333333334,Normalized
+mfccs_16_var,Random Forest,0.08333333333333333,Normalized
+mfccs_16_var,SVC,0.05333333333333334,Normalized
+mfccs_16_var,XGB,0.09,Normalized
+mfccs_17_var,KNN Euclidean,0.09,Scaled
+mfccs_17_var,KNN Cosine,0.09333333333333334,Scaled
+mfccs_17_var,Random Forest,0.06666666666666667,Scaled
+mfccs_17_var,SVC,0.11,Scaled
+mfccs_17_var,XGB,0.08666666666666667,Scaled
+mfccs_17_var,KNN Euclidean,0.09,Normalized
+mfccs_17_var,KNN Cosine,0.09333333333333334,Normalized
+mfccs_17_var,Random Forest,0.06666666666666667,Normalized
+mfccs_17_var,SVC,0.056666666666666664,Normalized
+mfccs_17_var,XGB,0.08666666666666667,Normalized
+mfccs_18_var,KNN Euclidean,0.07333333333333333,Scaled
+mfccs_18_var,KNN Cosine,0.043333333333333335,Scaled
+mfccs_18_var,Random Forest,0.09,Scaled
+mfccs_18_var,SVC,0.08,Scaled
+mfccs_18_var,XGB,0.09,Scaled
+mfccs_18_var,KNN Euclidean,0.07333333333333333,Normalized
+mfccs_18_var,KNN Cosine,0.043333333333333335,Normalized
+mfccs_18_var,Random Forest,0.09,Normalized
+mfccs_18_var,SVC,0.06333333333333334,Normalized
+mfccs_18_var,XGB,0.09,Normalized
+mfccs_19_var,KNN Euclidean,0.07666666666666666,Scaled
+mfccs_19_var,KNN Cosine,0.05333333333333334,Scaled
+mfccs_19_var,Random Forest,0.05,Scaled
+mfccs_19_var,SVC,0.08666666666666667,Scaled
+mfccs_19_var,XGB,0.08666666666666667,Scaled
+mfccs_19_var,KNN Euclidean,0.07666666666666666,Normalized
+mfccs_19_var,KNN Cosine,0.05333333333333334,Normalized
+mfccs_19_var,Random Forest,0.05,Normalized
+mfccs_19_var,SVC,0.06,Normalized
+mfccs_19_var,XGB,0.08666666666666667,Normalized
+mfccs_20_var,KNN Euclidean,0.08,Scaled
+mfccs_20_var,KNN Cosine,0.08333333333333333,Scaled
+mfccs_20_var,Random Forest,0.09666666666666666,Scaled
+mfccs_20_var,SVC,0.08333333333333333,Scaled
+mfccs_20_var,XGB,0.08333333333333333,Scaled
+mfccs_20_var,KNN Euclidean,0.08,Normalized
+mfccs_20_var,KNN Cosine,0.08333333333333333,Normalized
+mfccs_20_var,Random Forest,0.09666666666666666,Normalized
+mfccs_20_var,SVC,0.056666666666666664,Normalized
+mfccs_20_var,XGB,0.08333333333333333,Normalized
